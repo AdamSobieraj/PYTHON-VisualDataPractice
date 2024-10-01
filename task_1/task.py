@@ -3,10 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Załadowanie danych
-movies_df = pd.read_csv('tmdb_movies.csv')
-genres_df = pd.read_csv('tmdb_genres.csv')
+movies_df = pd.read_csv('data/tmdb_movies.csv')
+genres_df = pd.read_csv('data/tmdb_genres.csv')
 
-# Sprawdzenie nazwy kolumny 'id' w genres_df
+# Sprawdzenie nazwy kolumny w genres_df
 print("Nazwy kolumn w genres_df:")
 genres_df = genres_df.rename(columns={genres_df.columns[0]: 'genre_id'})
 print(genres_df.columns)
